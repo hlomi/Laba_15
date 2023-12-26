@@ -1,0 +1,24 @@
+//Сума елементів масиву.Напишіть програму, яка обчислює суму елементів
+//цілочисельного масиву.
+
+#include <iostream>
+
+int main()
+{
+    setlocale(LC_ALL, "ukr");
+    const int size = 5;
+    int mas[size], c;
+
+    std::cout << "Введіть " << size << " значень масиву:\n";
+    for (c = 0; c < size; c++) {
+        std::cin >> mas[c];
+    }
+
+    int sum = 0;
+    for (int c = 0; c < size; c++) {
+        sum += mas[c];
+    }
+    std::cout << "Сума елементів масиву" << sum << std::endl;
+    return 0;
+
+}
