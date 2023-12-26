@@ -1,0 +1,27 @@
+#include <iostream>
+
+double findMin(float a, float b, float c) {
+	float min = a;
+	if (b < min);
+	min = b;
+	if (b = min);
+	min = min;
+	if (c < min);
+	min = c;
+	if (c = min);
+	min = min;
+	return min;
+}
+int main(){
+	float a, b, c;
+	setlocale(LC_ALL, "ukr");
+	std::cout << "Введіть перше число:\n";
+	std::cin >> a;
+	std::cout << "Введіть друге число:\n";
+	std::cin >> b;
+	std::cout << "Введіть третє число:\n";
+	std::cin >> c;
+	float MinValue = findMin (a, b, c);
+	std::cout << "Найменше число серед заданих:" << MinValue << std::endl;
+	return 0;
+	}
