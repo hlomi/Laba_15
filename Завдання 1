@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+
+{
+	setlocale (LC_ALL, "ukr") ;
+	float x, y;
+	std::cout << "Введіть число x: \n";
+	std::cin >> x;
+	std::cout << "Введіть число y: \n";
+	std::cin >> y;
+	if (x > y) {
+		std::cout << "Результат:" << x << std::endl;
+		return 0;
+	}
+	else {
+		std::cout << "Результат:" << x << ";" << y << std::endl;
+		return 1;
+	}
+} 
